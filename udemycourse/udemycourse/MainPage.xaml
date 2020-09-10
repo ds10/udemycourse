@@ -4,11 +4,11 @@
              x:Class="udemycourse.MainPage">
 
     <StackLayout Margin="20,20,20,0">
-        <Entry Placeholder="University" />
-        <Entry Placeholder="a" />
-        <Entry Placeholder="b" />
-        <Entry Placeholder="c" />
-        <Entry Placeholder="d" />
+        <Entry x:Name="NameEntry" Placeholder="University" />
+        <Entry x:Name="aEntry" Placeholder="a" />
+        <Entry x:Name="bEntry" Placeholder="b" />
+        <Entry x:Name="cEntry" Placeholder="c" />
+        <Entry x:Name="dEntry" Placeholder="d" />
         <Button Text="save" 
                 x:Name="saveButton"
                 Clicked="saveButton_Clicked" />
