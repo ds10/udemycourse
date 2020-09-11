@@ -5,8 +5,15 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="New"
          Clicked="newContextToolbarItem_clicked" />
-       
     </ContentPage.ToolbarItems>
+    
     <ContentPage.Content>
+        <ListView x:Name="contactsListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>
